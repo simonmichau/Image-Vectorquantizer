@@ -6,10 +6,10 @@ designed for Proseminar Datenkompression SS20 at RWTH Aachen University
  Supposing a naive image format, that stores each pixel color as three individual values between 0 and 256 (this would result in a codebook with 16.777.216 vectors and 24 bit for each pixel, if each value was stored in binary), this method of compression is capable of a significant saving of storage data.
  Actually, depending on the specific image, using the Linde-Buzo-Gray (LBG) Algorithm, as little as 128 codevectors can be enough to reconstruct an image that is basically indifferentiable to a human observer, as you can see below. 
  
- ![Original image](https://github.com/simonmichau/IQCv2/blob/master/Image%20Results/in.jpg?raw=true "Original Image")
- ![8 codevectors](https://github.com/simonmichau/IQCv2/blob/master/Image%20Results/out8.jpg?raw=true "Original Image")
- ![64 codevectors](https://github.com/simonmichau/IQCv2/blob/master/Image%20Results/out64.jpg?raw=true "Original Image")
- ![512 codevectors](https://github.com/simonmichau/IQCv2/blob/master/Image%20Results/out512.jpg?raw=true "Original Image")
+ ![Original image](https://github.com/simonmichau/Image-Vectorquantizer/blob/master/Image%20Results/in.jpg?raw=true "Original Image")
+ ![8 codevectors](https://github.com/simonmichau/Image-Vectorquantizer/blob/master/Image%20Results/out8.jpg?raw=true "Original Image")
+ ![64 codevectors](https://github.com/simonmichau/Image-Vectorquantizer/blob/master/Image%20Results/out64.jpg?raw=true "Original Image")
+ ![512 codevectors](https://github.com/simonmichau/Image-Vectorquantizer/blob/master/Image%20Results/out512.jpg?raw=true "Original Image")
  
  The top left picture is the original one and the following are reconstructions from codebooks with 8, 64 and 512 codevectors.
  The encoding process will result in the files codebook.txt, where the binary values of the algorithmically determined codevectors are stored, and the file transmission.txt, where the binary index of the codevector that corresponds with each pixel is stored.
